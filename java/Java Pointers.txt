@@ -1,0 +1,6 @@
+--- See object cloning in reference to  object hash code etc 
+--- In hashing , there is some kind of unique code ...I think the cloned object has a different code not the same as the original object
+--- Look into shallow copy and deep copy once
+--- See the meaning of  virtual functions (All functions in java are virtual by default.)
+--- See covariant return types.
+--- Read about when a static block gets executed .. i.e when does a class get loaded (See Java bytes and try to vclear up things you have not understood)

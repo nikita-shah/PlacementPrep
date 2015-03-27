@@ -1,0 +1,57 @@
+Q1)Can we execute a program without main() method?
+Ans) Yes, one of the way is static block but in previous version of JDK not in JDK 1.7.
+
+class A3{  
+  static{  
+  System.out.println("static block is invoked");  
+  System.exit(0);  
+  }  
+} 
+
+
+Q2) What if the static modifier is removed from the signature of the main method?
+Ans)Program compiles. But at runtime throws an error "NoSuchMethodError". 
+
+Q3)Can you use this() and super() both in a constructor?
+Ans)No. Because super() or this() must be the first statement.
+
+
+Q4)Can we overload main() method?
+ANS)Yes, by method overloading. You can have any number of main methods in a class by method overloading. 
+Let's see the simple example:
+
+class Overloading1{  
+  public static void main(int a){  
+  System.out.println(a);  
+  }  
+    
+  public static void main(String args[]){  
+  System.out.println("main() method invoked");  
+  main(10);  
+  }  
+}  
+
+Output:main() method invoked
+       10
+	   
+
+Q5)Can we override static method?
+
+ANS)No, you can't override the static method because they are the part of class not object.	
+It is because the static method is the part of class and it is bound with class whereas instance method is bound with object 
+and static gets memory in class area and instance gets memory in heap.  
+
+Q6)Can we override the overloaded method?
+ANS)Yes.
+
+
+Q7)Can you declare an interface method static?
+ANS)No, because methods of an interface is abstract by default, and static and abstract keywords can't be used together.
+
+
+Q8)What is marker interface?
+ANS)An interface that have no data member and method is known as a marker interface.For example Serializable, Cloneable etc.
+
+
+Q9)Can we define private and protected modifiers for variables in interfaces?
+ANS)No, they are implicitly public.
